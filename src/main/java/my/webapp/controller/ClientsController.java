@@ -11,8 +11,6 @@ import javax.servlet.ServletContext;
 
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Result;
-import br.com.caelum.vraptor.controller.ControllerMethod;
-import br.com.caelum.vraptor.environment.Environment;
 import br.com.caelum.vraptor.view.Results;
 import de.neuland.jade4j.Jade4J;
 import my.webapp.bean.Book;
@@ -21,7 +19,7 @@ import my.webapp.config.AppConfig;
 @Controller
 public class ClientsController {
 	
-	private static final String JADE_DIR = AppConfig.NAME_DIRECTORY_HTML_FILES + this.getClass().getName() + File.separator;
+	private static final String JADE_DIR = AppConfig.NAME_DIRECTORY_HTML_FILES + "clients" + File.separator;
 	
 	@Inject
     private Result result;
