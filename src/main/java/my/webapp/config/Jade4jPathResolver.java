@@ -16,11 +16,11 @@ public class Jade4jPathResolver extends DefaultPathResolver {
 	
 	@Override
     protected String getPrefix() {
-        return "/WEB-INF/jade4j/";
+        return AppConfig.NAME_DIRECTORY_HTML_FILES;
     }
 
 	@Override
     protected String getExtension() {
-        return "jade";
+        return AppConfig.EXTENSION_FILES;
     }
 }
