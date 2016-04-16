@@ -24,13 +24,11 @@ public class ClientsController {
 	@Inject
     private Result result;
 	
-//	@Inject
-//	private Environment environment;
-	
 	@Inject
 	private ServletContext context;
 	
     public void add() throws Exception {
+    	
     	List<Book> books = new ArrayList<Book>();
     	books.add(new Book("The Hitchhiker's Guide to the Galaxy", 5.70, true));
     	books.add(new Book("Life, the Universe and Everything", 5.60, false));
